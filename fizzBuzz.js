@@ -1,8 +1,10 @@
-function fizzBuzz(givenNumber) {
-  let userNumber = givenNumber;
+function fizzBuzz() {
+  let userNumber = parseInt(prompt("Enter a number"));
 
   for (let index = 1; index <= userNumber; index++) {
-    if (index % 3 === 0) {
+    if (index % 3 === 0 && index % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (index % 3 === 0) {
       console.log("Fizz");
     } else if (index % 5 === 0) {
       console.log("Buzz");
@@ -12,4 +14,4 @@ function fizzBuzz(givenNumber) {
   }
 }
 
-fizzBuzz(20);
+fizzBuzz();
